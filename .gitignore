@@ -1,0 +1,19 @@
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.sln.docstates
+*.suo
+
+# Build Artifacts
+*.exe
+*.dll
+*.pdb
+*.obj
+*.ilk
+Debug/
+Release/
+x64/
+Win32/
+
+# Others
+.DS_Store
