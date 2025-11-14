@@ -19,8 +19,10 @@
 #include <vector>     // Diperlukan untuk std::string
 #include <cmath>      // Diperlukan untuk sin, cos (kamera)
 
-#include <glew.h>
-#include <freeglut.h> 
+#include <GL\glew.h>
+#include <GL\freeglut.h> 
+#include <GL\freeglut_ext.h>
+#include <GL\freeglut_std.h>
 
 #pragma comment(lib, "glew32.lib")
 #pragma comment(lib, "freeglut.lib")
@@ -65,7 +67,6 @@ void setup(void);
 void drawScene(void);
 void resize(int w, int h);
 void keyInput(unsigned char key, int x, int y);
-void keyUp(unsigned char key, int x, int y);
 void passiveMotion(int x, int y);
 void mouseClick(int button, int state, int x, int y);
 void update(int value);
@@ -295,7 +296,6 @@ void drawUI(void)
 
     // Crosshair
     drawText(winW / 2 - 5, winH / 2 - 5, "+");
-
 
     // Kembalikan status OpenGL
     glEnable(GL_DEPTH_TEST);
